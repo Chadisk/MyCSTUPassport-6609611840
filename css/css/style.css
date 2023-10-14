@@ -74,6 +74,39 @@ html,body{
 .fix{position: relative;clear: both;}
 
 /*
+        1.  nav
+*/
+.body {margin: 0;}
+
+ul.topnav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #141414;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #FFA500;}
+
+ul.topnav li.right {float: right;}
+
+
+/*
         2.  Welcome
 */
 .welcome-hero{
@@ -100,7 +133,7 @@ html,body{
 
 /*.header-text-area*/
 .header-text h2 {
-    color: #fff;
+    color: #ffffff;
     font-size: 54px;
     font-weight: 700;
     text-transform: uppercase;
@@ -146,23 +179,34 @@ body{
     background-color: #050505;
     }
 /*.single-about-txt*/
-.section-heading h2{
+.section-heading i{
     color: #cccccc;
-}
-.section-heading h2 span {
-    color: #FFA500;
+    font-size: 120%;
 }
 .single-about-txt li {
     font-size:18px;
     color: #cccccc;
     text-transform: initial;
     line-height: 1.8;
-    align-items: left;
+    text-align: left;
+    
+}
+
+    
+.section-heading {
+    text-align: center;
+}
+.section-heading span{
+    color: #FFA500;
+    text-align: center;
 }
 
 
+
 /*.single-about-img */
-.single-about-img{position: relative}
+.single-about-img{
+    position: relative
+}
 .single-about-img:before {
     position:  absolute;
     top: 0;
@@ -172,15 +216,24 @@ body{
     
 }
 .single-about-img img {
-    max-width: 800px;
+    max-width: 900px;
     height: 746px;
+}
+.single-about-img-quote{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+.single-about-txt-quote{
+    text-align:center ;    
+    padding:3% 0 0 0;
 }
 .about-list-icon{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 109%;
+    width: 100%;
     height: 90px;
 }
 /*.ab-list-icon */
@@ -188,7 +241,7 @@ body{
     display: flex;
 }
 .about-list-icon  ul li a {
-    padding-right: 22px;
+    padding-right: 28px;
     cursor:pointer;
     color: #fff;
 }
